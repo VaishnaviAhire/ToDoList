@@ -1,0 +1,94 @@
+
+/* General Body Styling */
+body {
+    background-color: #4B3F72; /* Dark green background */
+    font-family: 'Poppins', sans-serif; /* Apply a clean font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    box-sizing: border-box; /* Include padding/borders in dimensions */
+}
+
+/* Main Container */
+.container {
+    width: 360px;
+    padding: 20px;
+    text-align: center;
+    background-color: #A0D6B4; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Input and Button Section */
+.inputs {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Input takes full space minus button */
+    padding: 10px;
+    border: 2px solid #6E7B7B;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px; /* Smooth corners */
+    box-sizing: border-box;
+}
+
+button {
+    width: 70px;
+    height: 42px;
+    background-color:#9C5B7A; /* Dark green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFCC00; /* Lighter green on hover */
+}
+
+/* Task List Section */
+.text ul {
+    position: relative;
+    background-color: rgb(5, 31, 31); /* Slightly lighter dark green */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px; /* Space between tasks */
+    border-radius: 4px; /* Smooth corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Task shadow */
+    word-wrap: break-word; /* Handle long task names */
+    overflow-wrap: break-word;
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.text ul i:hover {
+    color: rgb(255, 0, 0); /* Red color on hover for delete */
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 400px) {
+    .container {
+        width: 90%; /* Adjust container width for small screens */
+        padding: 15px;
+    }
+}
